@@ -1,2 +1,13 @@
-com\mycompany\jsphibernate\JakartaRestConfiguration.class
+entities\Tarea.class
 com\mycompany\jsphibernate\resources\JakartaEE8Resource.class
+Util\HibernateUtil.class
+com\mycompany\jsphibernate\JakartaRestConfiguration.class
+servlet\RegistrarTareaServlet.class
+DAO\ProyectoDAO.class
+servlet\EliminarTareaServlet.class
+servlet\ListarProyectoServlet.class
+entities\Proyecto.class
+servlet\RegistrarProyectoServlet.class
+DAO\TareaDAO.class
+servlet\ListarTareasServlet.class
+servlet\EliminarProyectoServlet.class
