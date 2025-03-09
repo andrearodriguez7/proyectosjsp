@@ -1,0 +1,25 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<hibernate-configuration>
+
+    <session-factory>
+        <!-- Configuración de conexión a MySQL -->
+        <property name="hibernate.connection.driver_class">com.mysql.cj.jdbc.Driver</property>
+        <property name="hibernate.connection.url">jdbc:mysql://localhost:3306/jsphibernate</property>
+        <property name="hibernate.connection.username">root</property>
+
+        <!-- Dialecto adecuado para MySQL 8 -->
+        <property name="hibernate.dialect">org.hibernate.dialect.MySQL8Dialect</property>
+
+        <!-- Evitar que Hibernate borre las tablas al iniciar -->
+        <property name="hibernate.hbm2ddl.auto">update</property> <!-- Cambié 'Create' a 'update' para no perder datos -->
+
+        <!-- Mostrar las consultas SQL de Hibernate -->
+        <property name="hibernate.show_sql">true</property>
+        <property name="hibernate.format_sql">true</property>
+
+        <!-- Mapeo de las clases -->
+        <mapping class="entities.Proyecto"/>
+        <mapping class="entities.Tarea"/>
+    </session-factory>
+
+</hibernate-configuration>
